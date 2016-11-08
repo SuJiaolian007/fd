@@ -1,0 +1,207 @@
+@charset "UTF-8";
+* {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  font-family: 'Microsoft Yahei';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-tap-highlight-color: transparent; }
+
+ul, ol, li {
+  list-style: none; }
+
+html, body, .container, .sect1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.zh_xm {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+  clear: both; }
+
+html, body, .container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+body {
+  font-size: .16rem;
+  font-family: "微软雅黑"; }
+
+header {
+  width: 100%;
+  height: .44rem;
+  background: #292b37;
+  line-height: .44rem;
+  text-align: center;
+  position: relative; }
+  header span {
+    color: #fff; }
+  header .left {
+    position: absolute;
+    top: .17rem;
+    left: .15rem;
+    width: .1rem;
+    height: .1rem;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(135deg); }
+  header #label {
+    font-size: .17rem;
+    color: #fff; }
+  header .right {
+    position: absolute;
+    top: 0rem;
+    right: .15rem;
+    font-size: .32rem;
+    margin-top: -.1rem; }
+
+.sect1 {
+  overflow-y: auto; }
+
+.dv {
+  width: 100%; }
+
+.l_p {
+  width: 100%;
+  height: .34rem;
+  background: #ebebeb;
+  padding-left: 0.15rem;
+  line-height: .34rem;
+  font-size: .13rem;
+  color: #333333; }
+
+.l_list {
+  width: 96%;
+  height: 1.335rem;
+  margin-left: .15rem; }
+  .l_list ul {
+    width: 100%;
+    height: 100%; }
+    .l_list ul li {
+      width: 100%;
+      height: .445rem;
+      border-bottom: 1px solid #e6e6e6;
+      display: -webkit-flex; }
+      .l_list ul li p {
+        width: 80%;
+        height: 100%;
+        line-height: .445rem;
+        color: #333333; }
+      .l_list ul li span {
+        display: block;
+        width: 20%;
+        height: 100%;
+        position: relative;
+        line-height: .445rem;
+        font-size: .14rem;
+        color: #808080; }
+    .l_list ul .i_r {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-right: 1px solid #b6b6b6;
+      border-bottom: 1px solid #b6b6b6;
+      transform: rotate(314deg);
+      top: .16rem;
+      margin-left: .05rem; }
+
+.dv_a {
+  width: 100%;
+  height: .5rem;
+  margin-top: .35rem; }
+  .dv_a a {
+    width: 80%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    background: #ea5042;
+    margin: 0 auto;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .15rem;
+    color: #fff; }
+
+.k {
+  width: 100%;
+  height: .15rem;
+  background: #ebebeb;
+  margin-top: .15rem; }
+
+.l_p2 {
+  width: 100%;
+  height: .34rem;
+  line-height: .34rem;
+  padding-left: 0.15rem; }
+
+.zh {
+  width: 100%;
+  height: .7rem; }
+  .zh ul {
+    width: 100%;
+    height: 100%;
+    padding-left: .1rem;
+    overflow: hidden; }
+    .zh ul li {
+      width: .6rem;
+      height: .5rem;
+      margin: .1rem 0 .1rem .05rem;
+      float: left;
+      position: relative; }
+      .zh ul li img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; }
+      .zh ul li span {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        background: #10100f;
+        text-align: center;
+        line-height: .5rem;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .7; }
+      .zh ul li .c_span {
+        display: none; }
+
+.zh_xm {
+  width: 96%;
+  height: 2.225rem;
+  margin-left: .15rem; }
+  .zh_xm ul {
+    width: 100%;
+    height: 100%; }
+    .zh_xm ul li {
+      width: 100%;
+      height: .445rem;
+      border-bottom: 1px solid #e6e6e6;
+      display: -webkit-flex; }
+      .zh_xm ul li p {
+        width: 80%;
+        height: 100%;
+        line-height: .445rem;
+        color: #333333; }
+      .zh_xm ul li span {
+        display: block;
+        width: 20%;
+        height: 100%;
+        position: relative;
+        line-height: .445rem;
+        font-size: .14rem;
+        color: #808080; }
+
+/*# sourceMappingURL=style2.css.map */

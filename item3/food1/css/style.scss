@@ -1,0 +1,138 @@
+@charset "UTF-8";//设置字符编码
+@import url(reset.css);
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+@mixin full{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@mixin box{
+  display: -webkit-flex;
+  -webkit-flex-direction:column;
+}
+@mixin pos($p:absolute){
+  position: $p;
+}
+body{
+  font-size:0.32rem;
+}
+html,body,.contanier{
+  @include full;
+  @include box;
+}
+header{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  background: #292b37;
+  @include pos(relative);
+  color: #fff;
+  a{
+    @include pos;
+    left: 14px;
+    top: 15px;
+    color: #fff;
+    font-size:18px;
+    &:before{
+      content:"";
+      display:inline-block;
+      width:14px;
+      height:14px;
+      @include pos;
+      top:50%;
+      border-left:2px solid #fff;
+      border-top:2px solid #fff;
+      -webkit-transform:rotate(-45deg);
+    }
+  }
+  span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    @include pos;
+    right: 14px;
+    top:5px;
+  }
+}
+section{
+  width: 100%;
+  height: 100%;
+  -webkit-flex: 1;
+  overflow-y: scroll;
+  .L_tip {
+    width: 100%;
+    height: 117px;
+    background: #ebebeb;
+    margin:0 0;
+    @include pos(relative);
+    .L_search {
+      width: 90%;
+      height: 35px;
+      margin: 0 5% 6px 5%;
+      padding-top: 10px;
+      .L_text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        outline: none;
+        background: #fff;
+        border-radius: 5px;
+        border: none;
+      }
+      a {
+        @include pos;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        left: 23%;
+        top: 12px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .L_con{
+      width:90% ;
+      margin-left: 5%;
+      color: #808080;
+    }
+  }
+  .L_img{
+    width: 100%;
+    -webkit-flex: 1;
+    display: -webkit-flex;
+    -webkit-flex-wrap:wrap;
+    dl{
+      width: 33.33%;
+      height: 130px;
+      dt{
+        width: 82px;
+        height: 82px;
+        margin:0 auto;
+        margin-top: 15px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      dd{
+        padding-top: 5px;
+        text-align: center;
+        font-size: 17px;
+        color: #333333;
+      }
+    }
+  }
+}
+

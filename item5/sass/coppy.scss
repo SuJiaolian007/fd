@@ -1,0 +1,82 @@
+@import "reset.css";
+a{
+  text-decoration: none;
+}
+%full{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+@mixin flex($f:column){
+  display: -webkit-flex;
+  -webkit-flex-direction:$f;
+}
+%flex{
+  -webkit-flex:1;
+}
+%posr{
+  position: relative;
+}
+%posa{
+  position: absolute;
+}
+%clearfixed{
+  &:before,
+  &:after {
+    display: block;
+    content: " ";
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin downactive($bdcolor:#D80A1E,$bkcolor:#FFE1E1){
+  width:20px;
+  height:20px;
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content:"";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color:$bdcolor;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color:$bkcolor;
+    position: absolute;
+    left:0;
+    top: -2px;
+  }
+}
+
+@mixin rightactive($bdcolor:#3279FE){
+  display: block;
+    width: 0;
+    height: 0;
+    border: .4rem solid transparent;
+    border-left-color:$bdcolor;
+}
+
+@mixin topactive($bdcolor:#FF1500){
+  display: block;
+  width: 0;
+  height: 0;
+  border: .4rem solid transparent;
+  border-bottom-color:$bdcolor;
+}
+
+html,body,.container{
+  @extend %full;
+}
+
+

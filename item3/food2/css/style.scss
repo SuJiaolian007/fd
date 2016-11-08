@@ -1,0 +1,131 @@
+@charset "UTF-8";//设置字符编码
+@import url(reset.css);
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+@mixin full{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+@mixin box{
+  display: -webkit-flex;
+  -webkit-flex-direction:column;
+}
+@mixin pos($p:absolute){
+  position: $p;
+}
+body{
+  font-size:0.32rem;
+}
+html,body,.contanier{
+  @include full;
+  @include box;
+}
+header{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  background: #292b37;
+  @include pos(relative);
+  color: #fff;
+  a{
+    @include pos;
+    left: 14px;
+    top: 15px;
+    color: #fff;
+    font-size:18px;
+    &:before{
+      content:"";
+      display:inline-block;
+      width:14px;
+      height:14px;
+      @include pos;
+      top:50%;
+      border-left:2px solid #fff;
+      border-top:2px solid #fff;
+      -webkit-transform:rotate(-45deg);
+    }
+  }
+  span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    @include pos;
+    right: 14px;
+    top:5px;
+  }
+}
+section {
+  width: 100%;
+  height: 100%;
+  -webkit-flex: 1;
+  @include box;
+  .L_content{
+    width: 90%;
+    margin: 0 5%;
+    h2{
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      font-size: 16px;
+      color: #333333;
+    }
+    .L_parties{
+      width: 100%;
+      height: 102px;
+      text-align: center;
+      td{
+        border: 1px solid #cccccc;
+        font-size: 14px;
+      }
+      .L_cru{
+        background: #4ab134;
+        color: #fff;
+        border: none;
+      }
+      .L_vallee{
+        background: #f3981c;
+        color: #fff;
+        border: none;
+      }
+    }
+    h3{
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      font-size: 16px;
+      color: #333333;
+      margin-top: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .L_list{
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      li{
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        border-bottom: 1px solid #ccc;
+        font-size: 14px;
+        padding: 0 5px;
+        span{
+          float: right;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+

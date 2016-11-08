@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,sBAAW;AACnB,CAAC;EACC,eAAe,EAAE,IAAI;;AAEvB,sBAAK;EACH,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;EACX,QAAQ,EAAE,MAAM",
+"sources": ["../sass/coppy.scss"],
+"names": [],
+"file": "coppy.css"
+}

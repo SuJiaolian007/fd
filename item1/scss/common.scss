@@ -1,0 +1,23 @@
+li{
+  list-style: none;
+}
+.arrow{
+  &:after{
+    content:"";
+    height:8px;
+    width:8px;
+    display: block;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    -webkit-transform:rotate(135deg);
+  }
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #b3b3b3;
+}
+.hide{
+  display: none;
+}

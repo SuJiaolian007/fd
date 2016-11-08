@@ -1,0 +1,146 @@
+@import "coppy";
+.container{
+  @include flex;
+}
+body{
+  font-size: .3rem;
+}
+.head{
+  height:.98rem;
+  background-color: #292B37;
+  @extend %posr;
+  .s_back{
+    @extend %posa;
+    left:.3rem;
+    top:.3rem;
+    color: #fff;
+  }
+  .s_title{
+    text-align: center;
+    line-height:.98rem;
+    color:#fff;
+  }
+  .s_more{
+    @extend %posa;
+    right:.3rem;
+    top:0;
+    color: #fff;
+    font-size: .6rem;
+  }
+}
+
+.main{
+  @extend %flex;
+  overflow-y: scroll;
+}
+
+.s_nav{
+  width:84%;
+  margin:.3rem auto;
+  @extend %clearfixed;
+  .s_man{
+    float: left;
+   color: #3279FE;
+    border:1px solid #3279FE;
+  }
+
+  .s_girl{
+    float: right;
+    color: #EA5042;
+    border:1px solid #EA5042;
+  }
+
+  .s_man-bg{
+    background-color:#3279FE;
+    color:#fff;
+  }
+
+  .s_girl-bg{
+    background-color: #EA5042;
+    color:#fff;
+  }
+  a{
+    width:2.54rem;
+    height:.96rem;
+    text-align: center;
+    line-height:.96rem;
+    border-radius: 5px;
+  }
+}
+
+.s_show{
+  display: block !important;
+}
+.s_box{
+  margin-top:.58rem;
+  @extend %posr;
+  display: none;
+}
+.s_top{
+  margin-left:1.1rem;
+  @extend %posr;
+  img{
+    width:1.1rem;
+    height:4.7rem;
+  }
+  .s_height{
+    @extend %posa;
+    left:2px;
+    top:-.6rem;
+    color:#3279FE;
+  }
+  .s_blue{
+    @include rightactive;
+    @extend %posa;
+    left:-.46rem;
+    top:1.24rem;
+  }
+
+}
+
+.s_person{
+  width:2.7rem;
+  height:4.54rem;
+  @extend %posa;
+  left:2.6rem;
+  top:-.2rem;
+}
+
+.s_bottom{
+  @extend %posr;
+  margin-left:2.2rem;
+  img{
+    width:4.7rem;
+    height:1.1rem;
+  }
+  .s_weight{
+    @extend %posa;
+    left:3.86rem;
+    top:-.6rem;
+    color:#FF6E67;
+  }
+
+  .s_red{
+    @include topactive;
+    @extend %posa;
+    left:2.64rem;
+    bottom:-.36rem;
+  }
+}
+
+.s_introduce{
+  padding:.3rem;
+  background-color: #E6E6E6;
+  width:5.56rem;
+  margin:1.06rem auto;
+  line-height:.5rem;
+  .s_index{
+    color:#3279FE;
+  }
+  .s_condition{
+    color:#58B431;
+  }
+  .s_ideal{
+    color:#FF1500;
+  }
+}

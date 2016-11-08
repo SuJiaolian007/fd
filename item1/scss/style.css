@@ -1,0 +1,206 @@
+li {
+  list-style: none; }
+
+.arrow:after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  display: block;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(135deg); }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #b3b3b3; }
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #b3b3b3; }
+
+.hide {
+  display: none; }
+
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
+
+Backtrace:
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/plugin/compiler.rb:482:in `read'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/plugin/compiler.rb:293:in `watch'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/plugin.rb:108:in `method_missing'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/bin/sass:13:in `<top (required)>'
+C:/Ruby23-x64/bin/sass:23:in `load'
+C:/Ruby23-x64/bin/sass:23:in `<main>'
+*/
+/*body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+header {
+  height: 43px;
+  width: 100%;
+  background: #292b37;
+  border: 1px solid #3b3e4c;
+  color: #fff;
+  position: relative;
+  line-height: 43px; }
+  header h3 {
+    font-size: 17px;
+    text-align: center;
+    font-weight: normal; }
+  header .title_left {
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 15px;
+    height: 100%;
+    display: block; }
+  header .title_right {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 34px; }
+
+.form_info {
+  width: 100%;
+  height: 123px;
+  padding-top: 15px;
+  background: #ebebeb; }
+  .form_info .put {
+    width: 92%;
+    height: 35px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #fff; }
+    .form_info .put input {
+      width: 48%;
+      height: 99%;
+      border: none;
+      outline: none;
+      display: block;
+      padding-left: 20px;
+      margin: 0 auto;
+      background: url("../img/search.png") no-repeat 0 10px;
+      background-size: 15px 15px; }
+
+.p_info {
+  color: #808080;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 10px;
+  width: 92%;
+  margin: 0 auto; }
+
+.check {
+  width: 92%;
+  margin: 0 auto;
+  height: 14px;
+  margin-top: 6px; }
+  .check span {
+    width:25%;
+    float: left; }
+    .check span small {
+      line-height: 14px;
+      font-size: 12px;
+      height: 100%;
+      float: left; }
+    .check span i {
+      height: 14px;
+      width: 14px;
+      float: left;
+      margin-right: 10px; }
+    .check span:nth-child(1) {
+      color: #58b431; }
+      .check span:nth-child(1) i {
+        background: #58b431; }
+    .check span:nth-child(2) {
+      color: #0bcbf2; }
+      .check span:nth-child(2) i {
+        background: #0bcbf2; }
+    .check span:nth-child(3) {
+      color: #ea5042; }
+      .check span:nth-child(3) i {
+        background: #ea5042; }
+
+section {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  padding-left: 15px; }
+
+.classify {
+  height: 72px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 10px; }
+
+.class_list {
+  width:200%;
+  overflow: hidden; }
+  .class_list li {
+    width: 60px;
+    height: 50px;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5px; }
+    .class_list li p {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 15px;
+      color: #fff;
+      line-height: 50px;
+      text-align: center; }
+    .class_list li img {
+      width: 100%;
+      height: 100%; }
+
+.all_classify {
+  margin-left: 15px; }
+  .all_classify li {
+    height: 44px;
+    line-height: 44px;
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative; }
+    .all_classify li span {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -12.5px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      width: 25px;
+      font-size: 12px;
+      color: #fff;
+      border-radius: 50%; }
+    .all_classify li .red {
+      background: #ea5042; }
+    .all_classify li .green {
+      background: #58b431; }
+    .all_classify li .blue {
+      background: #0bcbf2; }
+
+/*# sourceMappingURL=style.css.map */
